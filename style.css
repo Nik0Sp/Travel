@@ -70,7 +70,7 @@
    height: 100vh;
    padding: 0 5%;
    display: flex;
-   background-image: url(/images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);
+   background-image: url(./images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -203,7 +203,7 @@
   .baner{
     height: 90vh;
     position: relative;
-    background-image: url(/images/marlin-clark-kRGuLooeAO0-unsplash.jpg);
+    background-image: url(./images/marlin-clark-kRGuLooeAO0-unsplash.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -358,7 +358,7 @@
 .product img {
     width: 100%;
     height: 400px;
-    background-image: url(/images/federico-beccari-ryC3SVUeRgY-unsplash.jpg);
+    background-image: url(./images/federico-beccari-ryC3SVUeRgY-unsplash.jpg);
 background-size: cover;
 background-position: center;
 
@@ -422,7 +422,7 @@ background-position: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-image: url(/images/alex-braga-kHkETsOc01A-unsplash.jpg);
+    background-image: url(./images/alex-braga-kHkETsOc01A-unsplash.jpg);
     background-position: center;
     background-size: cover;
   }
