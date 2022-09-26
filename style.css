@@ -1,0 +1,502 @@
+:root {
+    font-size: 62.5%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 100;
+   
+  }
+
+  header .logo{
+    height: 100px;
+    width: 400px;
+   display: flex;
+   align-items: center;
+
+
+  }
+
+  header .logo a{
+  text-decoration: none;
+  letter-spacing: 2px;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color:#fff;
+   text-shadow: 1px 1px #000;
+  font-family: 'Josefin Sans', sans-serif;
+
+  }
+  
+
+
+  header .burger {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
+  }
+
+  .main .burger-menu {
+    display: none;
+  }
+
+  .banner {
+    position: relative;
+   width: 100%;
+   height: 100vh;
+   padding: 0 5%;
+   display: flex;
+   background-image: url(/project01/images/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+  }
+
+ 
+  .banner::before,
+  .baner::before,
+  .contact::before
+
+   {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.banner::after,
+.baner::after,
+.contact::after
+
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+
+.banner .content {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner .content h1{
+  position: relative;
+  z-index: 3;
+  font-size: 8rem;
+  font-weight: bolder;
+  color: #ffff;
+  text-shadow: 1px 1px #ffffff,
+  2px 2px #ffffff,
+  3px 3px black;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.banner .content p {
+ margin: 0 10%;
+ font-size: 1.6rem;
+ letter-spacing: 1px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.btn{
+  padding: 10px 20px;
+  background-color: #ffffff;
+ align-self: center;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  position: relative;
+  z-index: 3;
+}
+
+.btn:hover{
+  opacity: 0.7;
+}
+
+
+.about{
+  height: 70vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about .imgBx{
+  width: 50%;
+  height: 60%;
+  
+}
+
+.about .imgBx img{
+  height: 100%;
+  width: 100%;
+  margin: 50px;
+}
+
+.about .content {
+ 
+  min-height: 540px;
+  width: 650px;
+}
+  
+  .about .content h3{
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 40px; 
+  }
+  .about .content p{
+    width: 540px;
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 30px 0;
+   
+  }
+
+  .baner{
+    height: 90vh;
+    position: relative;
+    background-image: url(/project01/images/marlin-clark-kRGuLooeAO0-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+  
+   
+  }
+
+
+  h2{
+    transform: translateY(25px);
+    padding: 10px;
+    background-color: #000;
+    color: #dadada;
+    font-size: 3rem;
+    position: relative;
+    z-index: 3;
+}
+
+.container {
+    width: 68%;
+    overflow: hidden;
+    height: 660px;
+    border-top: 2px solid rgba(119, 119, 119, 0.361);
+    border-bottom: 2px solid rgba(119, 119, 119, 0.361);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.318);
+
+
+}
+
+
+.container ul {
+    display: flex;
+    transform: translateX(650px);
+    list-style: none;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #444;
+
+  }
+
+  .product-liste{
+    transition: 5s;
+  }
+.product-liste.product-knopf-gedrückt{
+    transform: translateX(-650px);
+    transition: 5s;
+}
+
+
+
+.product {
+    width: 300px;
+    height: 500px;
+    background-color: #111111;
+    margin: 20px 12px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #000;
+  box-shadow: 0px 4px 7px 4px #00000056,
+  0px 5px 7px 4px #00000036,0px 4px 7px 4px #00000026;
+}
+
+.product:hover {
+    opacity: 0.5;
+}
+
+
+
+.product h6 {
+    font-size: 0.7em;
+    letter-spacing: 0.4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #0050aa;
+}
+
+.product .top-red{
+    background-color: #E60A14;
+}
+
+.product .top-blue{
+    background-color: #0050aa;
+
+}
+
+.product img {
+    width: 100%;
+    height: 400px;
+    background-image: url(/project01/images/federico-beccari-ryC3SVUeRgY-unsplash.jpg);
+background-size: cover;
+background-position: center;
+
+  }
+
+.product .product-bewertung{
+    padding: 2px 20px;
+    background-color: goldenrod;
+}
+
+.product h4 {
+    padding: 5px 20px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.474);
+    text-shadow: 1px 1px #fff;
+    text-transform: uppercase;
+
+}
+
+.product p{
+  font-size: 1.6rem;
+}
+
+.product-karten-knopf
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-27px) rotate(-90deg);
+    background: rgb(240, 240, 240);
+    color: #555;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-left: 3px solid rgba(149, 146, 146, 0.551);
+    z-index: 5;
+
+}
+
+  .reise-ziele{
+    height: 70vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* Contact */
+  
+  
+  .contact {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(/project01/images/alex-braga-kHkETsOc01A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .title h2 {
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #e6e6e6;
+    text-shadow: 1px 1px #2a2a2aa4,
+      2px 2px #2a2a2aa4;
+  
+  }
+  
+
+  
+
+  .contact .contactForm {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 100px;
+  }
+  
+  .contact .contactForm .zeile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .contact .contactForm .zeile2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact .contactForm .zeile input,
+  .contact .contactForm .zeile2 textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+  }
+  
+  .contact .contactForm .zeile2 textarea {
+    resize: none;
+    height: 200px;
+  }
+  
+  .contact .contactForm .zeile2 input[type="submit"] {
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    max-width: 150px;
+    border: 1px solid #f5b62dc5;
+    
+  }
+  
+  /* Footer bereich */
+  
+  footer{
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #d7d7d7;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  
+  footer .social{
+    margin: 20px 0;
+  }
+  footer .social a{
+    color: #c5711d;
+  font-size: 3rem;
+  margin: 10px;
+  }
+  
+  footer .social a:hover{
+  opacity: 0.5;
+  }
+  
+  
+
+@media (max-width:1023px) 
+{
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .content p{
+    width: 670px;
+  }
+
+  .about .imgBx {
+   margin-bottom: 50px;
+   align-self: center;
+  }
+  .about .imgBx img{
+    margin: 0;
+  }
+}
