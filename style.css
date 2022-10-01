@@ -364,10 +364,7 @@ background-position: center;
 
   }
 
-.product .product-bewertung{
-    padding: 2px 20px;
-    background-color: goldenrod;
-}
+
 
 .product h4 {
     padding: 5px 20px;
@@ -553,6 +550,174 @@ background-position: center;
    align-self: center;
   }
   .about .imgBx img{
+    height: 500px;
     margin: 0;
   }
+
+  
+  .baner .box{
+    background-color: #000;
+    z-index: 3;
+    width: 20%;
+    height: 250px;
+  }
+  .reise-ziele{
+    height: 2500px;
+  }
+  .reise-ziele .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     overflow: visible;
+    height: 100%;
+   }
+   .reise-ziele .container ul {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     transform: translateX(0);
+     height: 100%;
+ 
+ 
+   }
+
+   .reise-ziele {
+    min-height: 140vh;
+    text-align: center;
+  }
+
+  .product-karten-knopf{
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width:767px) {
+  .banner .content {
+    height: 80vh;
+  
+  }
+
+  .banner .content h1{
+    font-size: 5rem;
+  }
+  .banner .content p{
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.348);
+  }
+
+  .about {
+    min-height: 120vh;
+  }
+
+  .about .imgBx{
+    width: 90%;
+    height: 250px;
+  }
+
+  .about .imgBx img{
+    min-height: 280px;
+  }
+  .about .content .h3{
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .about .content {
+    width: 90%;
+  }
+
+  .about .content p{
+    width: 95%;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+ 
+  .baner {
+    height: 150vh;
+  }
+  .baner .box{
+    background-color: #000;
+    z-index: 3;
+    width: 150px;
+    height: 200px;
+  }
+
+  .baner .box span{
+    transform: rotateX(calc(var(--i) * 45deg)) translateZ(400px);
+
+  }
+
+  @keyframes animate {
+    0% {
+      transform: perspective(1000px) rotateX(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateX(360deg);
+    }
+  }
+
+  .reise-ziele {
+    min-height: 3500px;
+    text-align: center;
+  }
+
+  .reise-ziele .container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    overflow: visible;
+   height: 100%;
+  }
+  .reise-ziele .container ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    transform: translateX(0);
+    height: 100%;
+
+
+  }
+
+
+.container ul li a {
+    text-decoration: none;
+    color: #444;
+
+  }
+
+  .container .product-liste .product
+  {
+    width: 250px;
+    height: 300px;
+  }
+
+  .container .product-liste .product img{
+    height: 300px;
+  }
+.product-karten-knopf{
+  display: none;
+}
+  .product-liste{
+    transition: 5s;
+  }
+.product-liste.product-knopf-gedrückt{
+    transform: translateX(-650px);
+    transition: 5s;
+}
+
+.contact .contactForm .zeile {
+  padding: 0 10%;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.contact .contactForm .zeile2 textarea 
+{
+  width: 80%;
+}
+
+footer
+{height: 100px;
+}
 }
