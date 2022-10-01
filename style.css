@@ -162,7 +162,7 @@
 
 
 .about{
-  height: 70vh;
+  min-height: 100vh;
   background-color: #000;
   display: flex;
   justify-content: space-evenly;
@@ -609,7 +609,7 @@ background-position: center;
   }
 
   .about {
-    min-height: 120vh;
+    min-height: 200vh;
   }
 
   .about .imgBx{
